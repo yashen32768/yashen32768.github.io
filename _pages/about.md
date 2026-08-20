@@ -62,6 +62,24 @@ redirect_from:
   <article class="publication-item">
     <div class="publication-year">2026</div>
     <div>
+      <h3><a href="https://icml.cc/virtual/2026/poster/64384">MALICE: Memory-aware Loop Invariants Generation on Symbolic Execution Traces</a></h3>
+      <p>Tong Chen<sup>*</sup>, Siyu Liu<sup>*</sup>, Hongyi Zhong, Liao Zhang, Lixiang Wang, <strong>Xiwei Wu</strong>, Junchi Yan, Qinxiang Cao</p>
+      <p class="publication-venue">International Conference on Machine Learning (ICML), 2026. <span class="venue-tag">CCF-A</span> <a href="https://openreview.net/forum?id=O7Vf0wNY2T">OpenReview</a></p>
+    </div>
+  </article>
+
+  <article class="publication-item">
+    <div class="publication-year">2026</div>
+    <div>
+      <h3><a href="https://icfp26.sigplan.org/details/icfp-2026-icfp-papers/22/Assertions-for-Free-Transferring-Invariants-from-Algorithm-to-Implementation-Proofs-">Assertions for Free: Transferring Invariants from Algorithm to Implementation Proofs (Functional Pearl)</a></h3>
+      <p>Shushu Wu, Chengxi Yang, <strong>Xiwei Wu</strong>, Qinxiang Cao</p>
+      <p class="publication-venue">ACM SIGPLAN International Conference on Functional Programming (ICFP), 2026. <span class="venue-tag">CCF-A</span></p>
+    </div>
+  </article>
+
+  <article class="publication-item">
+    <div class="publication-year">2026</div>
+    <div>
       <h3><a href="https://link.springer.com/chapter/10.1007/978-3-032-30693-7_10">QCP: A Practical Separation Logic-Based C Program Verification Tool</a></h3>
       <p><strong>Xiwei Wu</strong>, Yueyang Feng, Xiaoyang Lu, Tianchuan Lin, Kan Liu, Zhiyi Wang, Shushu Wu, Lihan Xie, Chengxi Yang, Hongyi Zhong, Zihan Zhang, Juanru Li, Naijun Zhan, Zhenjiang Hu, Qinxiang Cao</p>
       <p class="publication-venue">Theoretical Aspects of Software Engineering (TASE), 2026. <span class="venue-tag">CCF-C</span> <a href="https://arxiv.org/abs/2505.12878">arXiv</a></p>
