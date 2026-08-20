@@ -37,19 +37,19 @@ redirect_from:
 <section id="research" class="home-section">
   <h2>Research</h2>
 
-  My current research interests include:
+  My research centers on QCP and its applications:
 
   <ul class="research-list">
-    <li><strong>Program Verification &amp; Logic:</strong> separation logic, Hoare logic, relational reasoning, symbolic execution, and proof-producing verification.</li>
-    <li><strong>Verified Systems:</strong> practical verification of C programs, eBPF applications, operating-system kernels, and low-level RISC-V software.</li>
-    <li><strong>AI for Verification:</strong> LLM-assisted invariant generation, verification-condition proving, and agentic workflows that reduce manual proof effort.</li>
+    <li><strong>QCP:</strong> developing a practical C program verifier based on separation logic, symbolic execution, automated reasoning, and proof checking in Rocq.</li>
+    <li><strong>Systems Verification:</strong> applying QCP to real-world systems software, including eBPF applications and operating-system kernels.</li>
+    <li><strong>AI-assisted Verification:</strong> integrating large language models with QCP for loop-invariant generation, verification-condition proving, and more automated verification workflows.</li>
   </ul>
 
 </section>
 
 <section id="publications" class="home-section publications-list">
   <h2>Publications</h2>
-  <p class="publication-note"><strong>Xiwei Wu</strong> is highlighted. <sup>*</sup> indicates equal contribution.</p>
+  <p class="publication-note"><sup>*</sup> Equal contribution.</p>
 
   <article class="publication-item">
     <div class="publication-year">2026</div>
