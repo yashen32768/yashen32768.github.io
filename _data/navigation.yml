@@ -1,7 +1,7 @@
-# Main navigation for the single-page research profile.
+# Language navigation for the bilingual research profile.
 main:
-  - title: "Research"
-    url: /#research
+  - title: "English"
+    url: /
 
-  - title: "Publications"
-    url: /#publications
+  - title: "中文"
+    url: /zh/
