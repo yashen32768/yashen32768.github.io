@@ -14,10 +14,18 @@ redirect_from:
 
 <p class="home-lead">
   I am a Ph.D. candidate in Computer Science and Technology at
-  <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a>.
+  <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a>, advised by
+  Prof. Qinxiang Cao. I am a primary developer of
+  <strong>QCP (Qualified C Programming Verifier)</strong>, a separation-logic-based
+  verification tool that combines annotation-guided automation with interactive
+  proofs in Rocq.
+</p>
+
+<p class="home-lead">
   My research focuses on making formal verification practical for real-world
-  systems software by combining program logics, automated reasoning, and
-  learning-based techniques.
+  systems software. In particular, I am interested in program logics and
+  automated reasoning, the verification of low-level systems software, and
+  AI-assisted techniques for invariant and proof generation.
 </p>
 
 <p class="home-contact">
@@ -37,13 +45,6 @@ redirect_from:
     <li><strong>AI for Verification:</strong> LLM-assisted invariant generation, verification-condition proving, and agentic workflows that reduce manual proof effort.</li>
   </ul>
 
-  <p>
-    A central part of my work is <strong>QCP (Qualified C Programming Verifier)</strong>,
-    a separation-logic-based verification tool that combines annotation-guided
-    automation with interactive proofs in Rocq. I am extending this line of work
-    toward scalable operating-system verification, RISC-V support, and more
-    automated proof construction with large language models.
-  </p>
 </section>
 
 <section id="publications" class="home-section publications-list">
