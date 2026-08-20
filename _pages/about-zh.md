@@ -39,6 +39,6 @@ locale: zh-CN
   </ul>
 </section>
 
-{% include publications-home.html heading="论文发表" equal_note="共同一作。" %}
+{% include publications-home.html heading="代表性论文" equal_note="共同一作。" selected_only=true view_all_url="/zh/publications/" view_all_label="查看完整论文列表 →" %}
 
 {% include home-styles.html %}

@@ -1,0 +1,92 @@
+- year: 2026
+  selected: true
+  title: "SL-VC: A Benchmark and Automated Framework for Separation Logic Verification Condition Proving"
+  url: "https://icml.cc/virtual/2026/poster/66427"
+  authors: 'Hanyang Wang<sup>*</sup>, <strong>Xiwei Wu</strong><sup>*</sup>, Qinxiang Cao'
+  venue: "International Conference on Machine Learning (ICML), 2026."
+  rank: "CCF-A"
+
+- year: 2026
+  selected: false
+  title: "MALICE: Memory-aware Loop Invariants Generation on Symbolic Execution Traces"
+  url: "https://icml.cc/virtual/2026/poster/64384"
+  authors: 'Tong Chen<sup>*</sup>, Siyu Liu<sup>*</sup>, Hongyi Zhong, Liao Zhang, Lixiang Wang, <strong>Xiwei Wu</strong>, Junchi Yan, Qinxiang Cao'
+  venue: "International Conference on Machine Learning (ICML), 2026."
+  rank: "CCF-A"
+  links:
+    - label: "OpenReview"
+      url: "https://openreview.net/forum?id=O7Vf0wNY2T"
+
+- year: 2026
+  selected: false
+  title: "Assertions for Free: Transferring Invariants from Algorithm to Implementation Proofs (Functional Pearl)"
+  url: "https://icfp26.sigplan.org/details/icfp-2026-icfp-papers/22/Assertions-for-Free-Transferring-Invariants-from-Algorithm-to-Implementation-Proofs-"
+  authors: 'Shushu Wu, Chengxi Yang, <strong>Xiwei Wu</strong>, Qinxiang Cao'
+  venue: "ACM SIGPLAN International Conference on Functional Programming (ICFP), 2026."
+  rank: "CCF-A"
+
+- year: 2026
+  selected: true
+  title: "QCP: A Practical Separation Logic-Based C Program Verification Tool"
+  url: "https://link.springer.com/chapter/10.1007/978-3-032-30693-7_10"
+  authors: '<strong>Xiwei Wu</strong>, Yueyang Feng, Xiaoyang Lu, Tianchuan Lin, Kan Liu, Zhiyi Wang, Shushu Wu, Lihan Xie, Chengxi Yang, Hongyi Zhong, Zihan Zhang, Juanru Li, Naijun Zhan, Zhenjiang Hu, Qinxiang Cao'
+  venue: "Theoretical Aspects of Software Engineering (TASE), 2026."
+  rank: "CCF-C"
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2505.12878"
+
+- year: 2025
+  selected: true
+  title: "VEP: A Two-stage Verification Toolchain for Full eBPF Programmability"
+  url: "https://www.usenix.org/conference/nsdi25/presentation/wu-xiwei"
+  authors: '<strong>Xiwei Wu</strong>, Yueyang Feng, Tianyi Huang, Xiaoyang Lu, Shengkai Lin, Lihan Xie, Shizhen Zhao, Qinxiang Cao'
+  venue: "USENIX Symposium on Networked Systems Design and Implementation (NSDI), 2025."
+  rank: "CCF-A"
+  links:
+    - label: "PDF"
+      url: "https://www.usenix.org/system/files/nsdi25-wu-xiwei.pdf"
+
+- year: 2025
+  selected: false
+  title: "Encode the ∀∃ Relational Hoare Logic into Standard Hoare Logic"
+  url: "https://doi.org/10.1145/3763138"
+  authors: 'Shushu Wu, <strong>Xiwei Wu</strong>, Qinxiang Cao'
+  venue: "ACM Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA), 2025."
+  rank: "CCF-A"
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2504.17444"
+
+- year: 2025
+  selected: false
+  title: "Accelerating CAR-Based Model-Checking with Multiple Unsatisfiable Cores"
+  url: "https://link.springer.com/chapter/10.1007/978-3-032-06847-7_5"
+  authors: 'Yibo Dong, <strong>Xiwei Wu</strong>, Jianwen Li, Geguang Pu, Ofer Strichman'
+  venue: "International Symposium on Model Checking Software (SPIN), 2025."
+  rank: "CCF-C"
+
+- year: 2024
+  selected: true
+  title: "Towards General Loop Invariant Generation: A Benchmark of Programs with Memory Manipulation"
+  url: "https://proceedings.neurips.cc/paper_files/paper/2024/hash/e93b673c55d6768cdd39ce90de8c4d4c-Abstract-Datasets_and_Benchmarks_Track.html"
+  authors: 'Chang Liu<sup>*</sup>, <strong>Xiwei Wu</strong><sup>*</sup>, Yuan Feng, Qinxiang Cao, Junchi Yan'
+  venue: "Advances in Neural Information Processing Systems (NeurIPS), 2024."
+  rank: "CCF-A"
+  links:
+    - label: "Code"
+      url: "https://github.com/Thinklab-SJTU/LIG-MM"
+
+- year: 2023
+  selected: false
+  title: "A Coq Library of Sets for Teaching Denotational Semantics"
+  url: "https://dblp.uni-trier.de/db/series/eptcs/eptcs400.html#series/eptcs/abs-2404-05459"
+  authors: 'Qinxiang Cao, <strong>Xiwei Wu</strong>, Yalun Liang'
+  venue: "International Workshop on Theorem Proving Components for Educational Software (ThEdu@CADE), 2023."
+
+- year: 2021
+  selected: false
+  title: "Countability of Inductive Types Formalized in the Object-Logic Level"
+  url: "https://dblp.uni-trier.de/db/series/eptcs/eptcs337.html#series/eptcs/abs-2107-07663"
+  authors: 'Qinxiang Cao, <strong>Xiwei Wu</strong>'
+  venue: "International Workshop on Logical Frameworks and Meta-Languages: Theory and Practice (LFMTP), 2021."

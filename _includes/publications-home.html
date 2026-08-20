@@ -1,94 +1,40 @@
-<section id="publications" class="home-section publications-list">
-  <h2>{{ include.heading | default: "Publications" }}</h2>
+<section id="publications" class="home-section publications-list{% if include.group_by_year %} publications-list--full{% endif %}">
+  {% if include.heading %}
+    <h2>{{ include.heading }}</h2>
+  {% endif %}
   <p class="publication-note"><sup>*</sup> {{ include.equal_note | default: "Equal contribution." }}</p>
 
-  <article class="publication-item">
-    <div class="publication-year">2026</div>
-    <div>
-      <h3><a href="https://icml.cc/virtual/2026/poster/66427">SL-VC: A Benchmark and Automated Framework for Separation Logic Verification Condition Proving</a></h3>
-      <p>Hanyang Wang<sup>*</sup>, <strong>Xiwei Wu</strong><sup>*</sup>, Qinxiang Cao</p>
-      <p class="publication-venue">International Conference on Machine Learning (ICML), 2026. <span class="venue-tag">CCF-A</span></p>
-    </div>
-  </article>
+  {% assign current_year = "" %}
+  {% for publication in site.data.publications %}
+    {% assign show_publication = true %}
+    {% if include.selected_only and publication.selected != true %}
+      {% assign show_publication = false %}
+    {% endif %}
 
-  <article class="publication-item">
-    <div class="publication-year">2026</div>
-    <div>
-      <h3><a href="https://icml.cc/virtual/2026/poster/64384">MALICE: Memory-aware Loop Invariants Generation on Symbolic Execution Traces</a></h3>
-      <p>Tong Chen<sup>*</sup>, Siyu Liu<sup>*</sup>, Hongyi Zhong, Liao Zhang, Lixiang Wang, <strong>Xiwei Wu</strong>, Junchi Yan, Qinxiang Cao</p>
-      <p class="publication-venue">International Conference on Machine Learning (ICML), 2026. <span class="venue-tag">CCF-A</span> <a href="https://openreview.net/forum?id=O7Vf0wNY2T">OpenReview</a></p>
-    </div>
-  </article>
+    {% if show_publication %}
+      {% if include.group_by_year and publication.year != current_year %}
+        <h2 class="publication-year-heading">{{ publication.year }}</h2>
+        {% assign current_year = publication.year %}
+      {% endif %}
 
-  <article class="publication-item">
-    <div class="publication-year">2026</div>
-    <div>
-      <h3><a href="https://icfp26.sigplan.org/details/icfp-2026-icfp-papers/22/Assertions-for-Free-Transferring-Invariants-from-Algorithm-to-Implementation-Proofs-">Assertions for Free: Transferring Invariants from Algorithm to Implementation Proofs (Functional Pearl)</a></h3>
-      <p>Shushu Wu, Chengxi Yang, <strong>Xiwei Wu</strong>, Qinxiang Cao</p>
-      <p class="publication-venue">ACM SIGPLAN International Conference on Functional Programming (ICFP), 2026. <span class="venue-tag">CCF-A</span></p>
-    </div>
-  </article>
+      <article class="publication-item{% if include.group_by_year %} publication-item--full{% endif %}">
+        {% unless include.group_by_year %}
+          <div class="publication-year">{{ publication.year }}</div>
+        {% endunless %}
+        <div>
+          <h3><a href="{{ publication.url }}">{{ publication.title }}</a></h3>
+          <p>{{ publication.authors }}</p>
+          <p class="publication-venue">
+            {{ publication.venue }}
+            {% if publication.rank %}<span class="venue-tag">{{ publication.rank }}</span>{% endif %}
+            {% for link in publication.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
+          </p>
+        </div>
+      </article>
+    {% endif %}
+  {% endfor %}
 
-  <article class="publication-item">
-    <div class="publication-year">2026</div>
-    <div>
-      <h3><a href="https://link.springer.com/chapter/10.1007/978-3-032-30693-7_10">QCP: A Practical Separation Logic-Based C Program Verification Tool</a></h3>
-      <p><strong>Xiwei Wu</strong>, Yueyang Feng, Xiaoyang Lu, Tianchuan Lin, Kan Liu, Zhiyi Wang, Shushu Wu, Lihan Xie, Chengxi Yang, Hongyi Zhong, Zihan Zhang, Juanru Li, Naijun Zhan, Zhenjiang Hu, Qinxiang Cao</p>
-      <p class="publication-venue">Theoretical Aspects of Software Engineering (TASE), 2026. <span class="venue-tag">CCF-C</span> <a href="https://arxiv.org/abs/2505.12878">arXiv</a></p>
-    </div>
-  </article>
-
-  <article class="publication-item">
-    <div class="publication-year">2025</div>
-    <div>
-      <h3><a href="https://www.usenix.org/conference/nsdi25/presentation/wu-xiwei">VEP: A Two-stage Verification Toolchain for Full eBPF Programmability</a></h3>
-      <p><strong>Xiwei Wu</strong>, Yueyang Feng, Tianyi Huang, Xiaoyang Lu, Shengkai Lin, Lihan Xie, Shizhen Zhao, Qinxiang Cao</p>
-      <p class="publication-venue">USENIX Symposium on Networked Systems Design and Implementation (NSDI), 2025. <span class="venue-tag">CCF-A</span> <a href="https://www.usenix.org/system/files/nsdi25-wu-xiwei.pdf">PDF</a></p>
-    </div>
-  </article>
-
-  <article class="publication-item">
-    <div class="publication-year">2025</div>
-    <div>
-      <h3><a href="https://doi.org/10.1145/3763138">Encode the &forall;&exist; Relational Hoare Logic into Standard Hoare Logic</a></h3>
-      <p>Shushu Wu, <strong>Xiwei Wu</strong>, Qinxiang Cao</p>
-      <p class="publication-venue">ACM Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA), 2025. <span class="venue-tag">CCF-A</span> <a href="https://arxiv.org/abs/2504.17444">arXiv</a></p>
-    </div>
-  </article>
-
-  <article class="publication-item">
-    <div class="publication-year">2025</div>
-    <div>
-      <h3><a href="https://link.springer.com/chapter/10.1007/978-3-032-06847-7_5">Accelerating CAR-Based Model-Checking with Multiple Unsatisfiable Cores</a></h3>
-      <p>Yibo Dong, <strong>Xiwei Wu</strong>, Jianwen Li, Geguang Pu, Ofer Strichman</p>
-      <p class="publication-venue">International Symposium on Model Checking Software (SPIN), 2025. <span class="venue-tag">CCF-C</span></p>
-    </div>
-  </article>
-
-  <article class="publication-item">
-    <div class="publication-year">2024</div>
-    <div>
-      <h3><a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/e93b673c55d6768cdd39ce90de8c4d4c-Abstract-Datasets_and_Benchmarks_Track.html">Towards General Loop Invariant Generation: A Benchmark of Programs with Memory Manipulation</a></h3>
-      <p>Chang Liu<sup>*</sup>, <strong>Xiwei Wu</strong><sup>*</sup>, Yuan Feng, Qinxiang Cao, Junchi Yan</p>
-      <p class="publication-venue">Advances in Neural Information Processing Systems (NeurIPS), 2024. <span class="venue-tag">CCF-A</span> <a href="https://github.com/Thinklab-SJTU/LIG-MM">Code</a></p>
-    </div>
-  </article>
-
-  <article class="publication-item">
-    <div class="publication-year">2023</div>
-    <div>
-      <h3><a href="https://dblp.uni-trier.de/db/series/eptcs/eptcs400.html#series/eptcs/abs-2404-05459">A Coq Library of Sets for Teaching Denotational Semantics</a></h3>
-      <p>Qinxiang Cao, <strong>Xiwei Wu</strong>, Yalun Liang</p>
-      <p class="publication-venue">International Workshop on Theorem Proving Components for Educational Software (ThEdu@CADE), 2023.</p>
-    </div>
-  </article>
-
-  <article class="publication-item">
-    <div class="publication-year">2021</div>
-    <div>
-      <h3><a href="https://dblp.uni-trier.de/db/series/eptcs/eptcs337.html#series/eptcs/abs-2107-07663">Countability of Inductive Types Formalized in the Object-Logic Level</a></h3>
-      <p>Qinxiang Cao, <strong>Xiwei Wu</strong></p>
-      <p class="publication-venue">International Workshop on Logical Frameworks and Meta-Languages: Theory and Practice (LFMTP), 2021.</p>
-    </div>
-  </article>
+  {% if include.view_all_url %}
+    <p class="view-all-publications"><a href="{{ include.view_all_url }}">{{ include.view_all_label | default: "View all publications" }}</a></p>
+  {% endif %}
 </section>

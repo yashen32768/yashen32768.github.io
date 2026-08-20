@@ -46,6 +46,6 @@ redirect_from:
   </ul>
 </section>
 
-{% include publications-home.html %}
+{% include publications-home.html heading="Selected Publications" equal_note="Equal contribution." selected_only=true view_all_url="/publications/" view_all_label="View all publications →" %}
 
 {% include home-styles.html %}

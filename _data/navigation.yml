@@ -1,7 +1,20 @@
-# Language navigation for the bilingual research profile.
-main:
-  - title: "English"
+# Language-specific navigation for the bilingual research profile.
+en:
+  - title: "Home"
     url: /
+
+  - title: "Publications"
+    url: /publications/
 
   - title: "中文"
     url: /zh/
+
+zh:
+  - title: "主页"
+    url: /zh/
+
+  - title: "论文"
+    url: /zh/publications/
+
+  - title: "English"
+    url: /
